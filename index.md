@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+# BYOA - JSON Serialization
+In this project, you will use your knowledge of Swift and Networking to build an app from an API of your choosing! Building apps on your own will not only strengthen your skills, but also allow you better learn your limits.
 
-You can use the [editor on GitHub](https://github.com/Stateful-Academy/BYOA.4.3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Students who complete this project independently or as a pairing will showcase their understanding of the following principles:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Basic Storyboard constraints
+* UITableviews
+* Creating Custom `class` objects
+* Constants, Variables, and Basic Data Types
+* Collections
+* Functions
+* Control Flow
+* IBActions && IBOutlets
+* API Calls
+* API Documentation
+---
 
-### Markdown
+##  Before you begin
+Please `Fork` then `clone` the repo. You can access the repo here:
+[GitHub - Stateful-Academy/BYOA.4.3: A repo to build your own app from!](https://github.com/Stateful-Academy/BYOA.4.3)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Create a local branch named `starter` and track the remote branch `starter`. 
 
-```markdown
-Syntax highlighted code block
+To do this:
+ * Open `Terminal`
+ * Navigate to the correct `directory`
+ * Type `git checkout --track origin/starter` 
+	 * Hype
+---
 
-# Header 1
-## Header 2
-### Header 3
+## Design
+The design of your app is entirely up to you! Do want to have a list view that displays the data? Maybe you want the user to have the option to navigate to a detail screen to see additional information? Its all up to you!
 
-- Bulleted
-- List
+That said, we recommend reviewing the API docs for the API you choose and see what type of data you’ll have access to. Let that be your guide when deciding how it should look.
 
-1. Numbered
-2. List
+Feel free to reference any past project for inspiration and syntax support.
 
-**Bold** and _Italic_ and `Code` text
+___
 
-[Link](url) and ![Image](src)
-```
+## Choosing the API
+Using the Public API’s list on GitHub browse the options available and choose the API that sounds best to you.
+[GitHub - public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)
+A few things to remember when choosing an API:
+* Is it free?
+* What type of `Authorization` does it require?
+* Does it return JSON 😨
+* What does the URL look like?
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Reach out to an Instructor for support on choosing the right API
 
-### Jekyll Themes
+___
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Stateful-Academy/BYOA.4.3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Forbidden APIS
+The following API’s are forbidden to use. Why? They either use `OAUTH` which you have not learned yet, are apart of the course, or in our experience they do not lend themselves well to this type of project.
 
-### Support or Contact
+Please do not use any of the following APIs:
+* Nasa
+* DnD
+* WeatherBit
+* CoinGecko
+* TMDB: The Movie Data Base
+* Pokeapi
+* Bungie Studios
+* Whale Museum
+* Shibe Online
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+___
