@@ -24,7 +24,7 @@ Create a local branch named `starter` and track the remote branch `starter`.
 To do this:
  * Open `Terminal`
  * Navigate to the correct `directory`
- * Type `git checkout --track origin/starter` 
+ * Type `git checkout -b starter` 
 	 * Hype
 ---
 
