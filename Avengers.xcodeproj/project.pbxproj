@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		290E458429A6A02D0041AAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E458329A6A02D0041AAC5 /* AppDelegate.swift */; };
 		290E458629A6A02D0041AAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E458529A6A02D0041AAC5 /* SceneDelegate.swift */; };
-		290E458829A6A02D0041AAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E458729A6A02D0041AAC5 /* ViewController.swift */; };
 		290E458B29A6A02D0041AAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E458929A6A02D0041AAC5 /* Main.storyboard */; };
 		290E458D29A6A02F0041AAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290E458C29A6A02F0041AAC5 /* Assets.xcassets */; };
 		290E459029A6A02F0041AAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E458E29A6A02F0041AAC5 /* LaunchScreen.storyboard */; };
 		290E459B29A6AB240041AAC5 /* Avenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E459A29A6AB240041AAC5 /* Avenger.swift */; };
 		290E459D29A6BC940041AAC5 /* AvengerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E459C29A6BC940041AAC5 /* AvengerController.swift */; };
 		290E45A129A6BCD10041AAC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E45A029A6BCD10041AAC5 /* Constants.swift */; };
+		290E45A329A6BEC90041AAC5 /* AvengerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E45A229A6BEC90041AAC5 /* AvengerDetailVC.swift */; };
+		290E45A529A6BEDB0041AAC5 /* AvengerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E45A429A6BEDB0041AAC5 /* AvengerListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		290E458029A6A02D0041AAC5 /* Avengers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avengers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290E458329A6A02D0041AAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290E458529A6A02D0041AAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		290E458729A6A02D0041AAC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		290E458A29A6A02D0041AAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290E458C29A6A02F0041AAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290E458F29A6A02F0041AAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		290E459A29A6AB240041AAC5 /* Avenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avenger.swift; sourceTree = "<group>"; };
 		290E459C29A6BC940041AAC5 /* AvengerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengerController.swift; sourceTree = "<group>"; };
 		290E45A029A6BCD10041AAC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		290E45A229A6BEC90041AAC5 /* AvengerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengerDetailVC.swift; sourceTree = "<group>"; };
+		290E45A429A6BEDB0041AAC5 /* AvengerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengerListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,8 @@
 		290E459F29A6BCB80041AAC5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				290E458729A6A02D0041AAC5 /* ViewController.swift */,
+				290E45A429A6BEDB0041AAC5 /* AvengerListTableViewController.swift */,
+				290E45A229A6BEC90041AAC5 /* AvengerDetailVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -189,10 +192,11 @@
 			files = (
 				290E459B29A6AB240041AAC5 /* Avenger.swift in Sources */,
 				290E459D29A6BC940041AAC5 /* AvengerController.swift in Sources */,
-				290E458829A6A02D0041AAC5 /* ViewController.swift in Sources */,
 				290E458429A6A02D0041AAC5 /* AppDelegate.swift in Sources */,
 				290E458629A6A02D0041AAC5 /* SceneDelegate.swift in Sources */,
+				290E45A329A6BEC90041AAC5 /* AvengerDetailVC.swift in Sources */,
 				290E45A129A6BCD10041AAC5 /* Constants.swift in Sources */,
+				290E45A529A6BEDB0041AAC5 /* AvengerListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
