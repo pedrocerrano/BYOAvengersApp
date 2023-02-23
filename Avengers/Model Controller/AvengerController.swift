@@ -23,7 +23,29 @@ class AvengerController {
         guard let finalURL = urlComponents?.url else { completion(nil); return }
         print("Final URL: \(finalURL)")
         
-        
-        
+        URLSession.shared.dataTask(with: finalURL) { avengerData, response, error in
+            if let error = error {
+                print("Error in Avenger List request: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                print("Avenger List Response Code: \(response.statusCode)")
+            }
+            
+            guard let data = avengerData else { completion(nil); return }
+            do {
+                if let topLevel = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String : Any],
+                   let topLevelData = topLevel["data"] as? [String : Any],
+                   let avengersArray = topLevelData["results"] as? [[String : Any]]  {
+                    
+                    let avengers = avengersArray.compactMap { Avenger(avengerDictionary: $0) }
+                    completion(avengers)
+                }
+            } catch {
+                print("Unable to retrieve Avenger List Data: \(error.localizedDescription)")
+            }
+        }.resume()
     }
 }

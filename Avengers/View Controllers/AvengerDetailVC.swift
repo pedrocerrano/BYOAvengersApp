@@ -9,21 +9,32 @@ import UIKit
 
 class AvengerDetailVC: UIViewController {
 
+    //MARK: - OUTLETS
+    @IBOutlet weak var avengerDetailNameLabel: UILabel!
+    @IBOutlet weak var avengerDetailComicsLabel: UILabel!
+    @IBOutlet weak var avengerDetailDescriptionLabel: UILabel!
+    
+    
+    //MARK: - LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+    
+    //MARK: - PROPERTIES
+    var avengerDetails: Avenger? {
+        didSet {
+            updateViews()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: - FUNCTIONS
+    func updateViews() {
+        guard let avengerDetails = avengerDetails else { return }
+        avengerDetailNameLabel.text = avengerDetails.name
+        avengerDetailComicsLabel.text = "Comics Appearing In: \(avengerDetails.comicsAppearing)"
+        avengerDetailDescriptionLabel.text = "About \(avengerDetails.name): \(avengerDetails.description)"
     }
-    */
 
 }
