@@ -43,7 +43,9 @@ class AvengerListVC: UIViewController {
             if let index = avengersTableView.indexPathForSelectedRow {
                 if let destinationVC = segue.destination as? AvengerDetailVC {
                     let avenger = avengers[index.row]
-                    destinationVC.avengerDetails = avenger
+                    DispatchQueue.main.async {
+                        destinationVC.avengerDetails = avenger
+                    }
                 }
             }
         }

@@ -18,9 +18,9 @@ class AvengerListTableViewCell: UITableViewCell {
     func updateViews(avenger: Avenger) {
         avengerNameLabel.text = avenger.name
         
-        let imageString = URL(string: "\(avenger.thumbnailPath).\(avenger.thumbnailExtention)") ?? URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg")!
+        let imageURL = URL(string: "\(avenger.thumbnailPath).\(avenger.thumbnailExtention)") ?? URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg")!
 //        print("IMAGE STRING: \(imageString)")
-        avengerImageView.loadFromURL(url: imageString)
+        avengerImageView.loadFromURL(url: imageURL)
     }
 
 }
